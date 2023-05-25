@@ -1,7 +1,8 @@
-import dotenv from "dotenv";
-
 const express = require("express");
 const app = express();
+const dotenv = require("dotenv");
+const buddyDexRouter = require("./routes/buddyDex");
+const buddiesRouter = require("./routes/buddies");
 // const mongoose = require("mongoose");
 // mongoose.connect();
 const cors = require("cors");
@@ -12,13 +13,10 @@ dotenv.config();
 
 const portNumber = 3001;
 
-app.get("/test", (req, res) => {
-  res.send("Hello world!");
-});
+app.use("/buddies", buddiesRouter);
 
-app.post("/register", (req, res) => {
-  res.send("POST request for register!");
-});
+// Will invoke the middleware function "buddyDexRouter" for all requests which match the math /buddyDex
+app.use("/buddyDex", buddyDexRouter);
 
 app.listen(portNumber, () => {
   console.log(`The server is running on port ${portNumber}`);
