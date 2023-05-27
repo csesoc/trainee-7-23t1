@@ -5,21 +5,11 @@ dotenv.config();
 
 const buddiesDbUri = process.env.DATABASE_URI;
 const client = new MongoClient(buddiesDbUri);
-// const connection = await client.connect();
-// let connection;
-// try {
-//   connection = await client.connect();
-// } catch (error) {
-//   console.log(error);
-// }
-let SleepingBuddiesDb;
-const mongoConnect = async () => {
-  try {
-    const connection = await client.connect();
-    SleepingBuddiesDb = connection.db("SleepingBuddiesDb");
-  } catch (error) {
-    console.log(error);
-  }
+
+let SleepingBuddiesDb = client.db("SleepingBuddiesDb");
+let buddies = SleepingBuddiesDb.collection("buddies");
+let buddiesDex = SleepingBuddiesDb.collection("buddiesDex");
+module.exports = {
+  buddies: buddies,
+  buddiesDex: buddiesDex,
 };
-mongoConnect();
-module.exports = SleepingBuddiesDb;
