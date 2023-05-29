@@ -18,7 +18,7 @@ a {
     padding: 0;
 }
 
-landing_cont{
+.landing_cont{
     align-items: center;
     margin: 10px;
     background-image: url("84166248_587553225158380_1574328345477251072_n.jpg");
@@ -29,7 +29,7 @@ landing_cont{
     justify-content: center;
 }
 
-landing_cont:before{
+.landing_cont:before{
     content: "";
     position: absolute;
     top: 0px;
