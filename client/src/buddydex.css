@@ -18,7 +18,6 @@ a {
 
 .buddy_cont{
     align-items: center;
-    margin: 10px;
     background: linear-gradient(120deg, aquamarine, rgb(91, 208, 255));
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -28,7 +27,6 @@ a {
     width: 100%;
     height:100%;
     position: fixed;
-
 }
 
 .buddy_cont:before{
