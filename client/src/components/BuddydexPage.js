@@ -1,7 +1,8 @@
-
+import "../buddydex.css";
 
 const BuddydexPage = () => {
   return (
+    <div class="buddy_cont">
     <div>
       <button class="return">
         <a href="farm">
@@ -18,6 +19,7 @@ const BuddydexPage = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

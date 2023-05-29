@@ -16,7 +16,7 @@ a {
     padding: 0;
 }
 
-body{
+buddy_cont{
     align-items: center;
     margin: 10px;
     background: linear-gradient(120deg, aquamarine, rgb(91, 208, 255));
@@ -27,7 +27,7 @@ body{
     justify-content: center;
 }
 
-body:before{
+buddy_cont:before{
     content: "";
     position: absolute;
     top: 0px;
