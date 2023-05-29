@@ -10,7 +10,7 @@ const BuddydexPage = () => {
         </a>
       </button>
         
-      <div class="wrapper">
+      <div class="buddy_wrapper">
         <h1>PETS</h1>
         <div id="pets" class="pets">
           <div id="pet" class="pet">

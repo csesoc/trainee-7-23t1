@@ -27,6 +27,10 @@ a {
     display: flex;
     height: inherit;
     justify-content: center;
+    width: 100%;
+    height:100%;
+    position: fixed;
+
 }
 
 .landing_cont:before{
