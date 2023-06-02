@@ -47,12 +47,12 @@ body {
     overflow: hidden; /* Hide scrollbars */
 }
 
-.wrapper {
+.wrapper_lp {
     position: relative;
     z-index: 1;
 }
 
-h1{
+.landing_h{
     font-family: 'Slackey', cursive;
     font-size: 70px;
     color: white;
