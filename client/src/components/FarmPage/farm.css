@@ -1,5 +1,5 @@
 
-body {
+.farm-container {
   background-image: url(grass.png);
   background-size: 70%;
 }
@@ -31,7 +31,7 @@ body {
   animation-delay: 0s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-
+  
 }
 
 .pet-container {

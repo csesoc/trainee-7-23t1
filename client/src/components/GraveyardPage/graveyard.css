@@ -1,9 +1,7 @@
 
-body {
-  background-image: url(grass.png);
+.grave-container {
   background-size: 70%;
-}
-.grave {
+  background-image: url(grass.png);
   position: relative;
   display: flex;
   justify-content: center;
