@@ -1,9 +1,10 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import LandingPage from "./components/LandingPage";
+
+import LandingPage from "./components/LandingPage/LandingPage";
 import FarmPage from "./components/FarmPage/FarmPage";
 import GraveyardPage from "./components/GraveyardPage/GraveyardPage";
-import BuddydexPage from "./components/BuddydexPage";
+import BuddydexPage from "./components/Buddydex/BuddydexPage";
 
 function App() {
   return (

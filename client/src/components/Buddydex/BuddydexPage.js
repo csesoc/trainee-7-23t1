@@ -19,16 +19,36 @@ const BuddydexPage = () => {
             <div id="pet" class="pet">
               <div class="row">
                 <div class="pet-container">
-
+                  <PetElement
+                    name='Milo'
+                    type='Dog'
+                    description='Just a cute dog.'
+                    collected={true}
+                  />
                 </div>
                 <div class="pet-container">
-
+                  <PetElement
+                    name='Milo'
+                    type='Dog'
+                    description='Just a cute dog.'
+                    collected={true}
+                  />
                 </div>
                 <div class="pet-container">
-              
+                  <PetElement
+                    name='Milo'
+                    type='Dog'
+                    description='Just a cute dog.'
+                    collected={true}
+                  />
                 </div>
                 <div class="pet-container">
-                  
+                  <PetElement
+                    name='Salina'
+                    type='Human'
+                    description='Just a cute dog.'
+                    collected={false}
+                  />
                 </div>
               </div>
             </div>

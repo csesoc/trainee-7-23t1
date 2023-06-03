@@ -1,4 +1,4 @@
-import "../landing.css";
+import "./landing.css";
 
 const LandingPage = () => {
   return (
