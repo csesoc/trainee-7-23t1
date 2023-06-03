@@ -30,7 +30,7 @@ const BuddydexPage = () => {
                     name='Milo'
                     type='Dog'
                     description='Just a cute dog.'
-                    collected={true}
+                    collected={false}
                     imageSrc={miloImage}
                   />
                 </div>
@@ -39,7 +39,7 @@ const BuddydexPage = () => {
                     name='Mittens'
                     type='Cat'
                     description='Just a cute cat.'
-                    collected={true}
+                    collected={false}
                     imageSrc={mittensImage}
                   />
                 </div>
@@ -57,7 +57,7 @@ const BuddydexPage = () => {
                     name='Salina'
                     type='Human'
                     description='Training lead.'
-                    collected={false}
+                    collected={true}
                     imageSrc={salinaImage}
                   />
                   <div class="pet-box">
@@ -65,7 +65,7 @@ const BuddydexPage = () => {
                       name='Carrots'
                       type='Rabbit'
                       description='Just a cute rabbit.'
-                      collected={true}
+                      collected={false}
                       imageSrc={carrotsImage}
                     />
                   </div>
