@@ -4,7 +4,7 @@ import Clock from "./Clock";
 import "./farm.css";
 import { useState } from "react";
 
-function FarmPage({ pets, updateCollectedStatus }) {
+function FarmPage({ pets, updateCollectedStatus, updateLimbStatus }) {
   const [petCount, setCount] = useState(1);
 
   const handleCollectClick = (petName) => {
@@ -29,6 +29,15 @@ function FarmPage({ pets, updateCollectedStatus }) {
 
   const collectedPets = pets.filter((pet) => pet.collected);
 
+  // Testing out the elimination options
+  const handleMurderClick = (petName) => {
+    const randomIndex = Math.floor(Math.random() * collectedPets.length);
+    const randomPetIndex = 
+      randomIndex === clickedPetIndex
+      ? (randomIndex + 1) % pets.length
+      : randomIndex;
+  }
+  
   return (
     <div className="farm-container">
       <div className="Farm">

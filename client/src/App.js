@@ -140,12 +140,26 @@ function App() {
     setPets(updatedPets);
   };
 
+  const updateLimbStatus = (petName, newStatus) => {
+    const updatedPets = pets.map((pet) => {
+      if (pet.name === petName) {
+        return {
+          ...pet,
+          limbs: newStatus,
+        };
+      }
+      return pet;
+    });
+
+    setPets(updatedPets);
+  };
+
   return (
     <Router>
       <Routes>
         <Route path="/" element={<LandingPage />}></Route>
         <Route path="/farm" 
-           element={<FarmPage pets={pets} updateCollectedStatus={updateCollectedStatus} />}></Route>
+           element={<FarmPage pets={pets} updateCollectedStatus={updateCollectedStatus} updateLimbStatus={updateLimbStatus}/>}></Route>
         <Route path="/graveyard" element={<GraveyardPage />}></Route>
         <Route path="/buddydex" element={<BuddydexPage />}></Route>
       </Routes>
