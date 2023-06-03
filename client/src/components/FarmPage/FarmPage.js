@@ -31,7 +31,7 @@ function FarmPage({ pets, updateCollectedStatus }) {
 
   return (
     <div className="farm-container">
-      <div className="Farm">
+      <div className="farm">
         <button className="graveyard">
           <a href="graveyard">
             <b>☗</b>
