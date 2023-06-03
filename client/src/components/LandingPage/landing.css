@@ -30,6 +30,7 @@ a {
     width: 100%;
     height: 100%;
     position: fixed;
+    overflow: hidden;
 
 }
 
@@ -41,10 +42,6 @@ a {
     bottom: 0px;
     left: 0px;
     background-color: rgba(0,0,0,0.25);
-}
-
-body {
-    overflow: hidden; /* Hide scrollbars */
 }
 
 .wrapper_lp {
