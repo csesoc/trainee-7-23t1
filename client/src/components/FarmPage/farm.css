@@ -14,7 +14,6 @@ body:before{
   bottom: 0px;
   left: 0px;
   background-color: rgba(0,0,0,0.10);
-}
 
 .info-box {
   position: fixed;
@@ -59,6 +58,7 @@ body:before{
   width: 200px; /* Adjust the width as needed */
   padding: 10px;
   background-color: #f0f0f0;
+
   border: 10px ridge #4C9900;
 
 }
