@@ -45,7 +45,7 @@ const BuddydexPage = () => {
                 </div>
                 <div class="pet-box">
                   <PetElement
-                    name='Twitter'
+                    name='Bird'
                     type='Bird'
                     description='Just a cute bird.'
                     collected={true}
