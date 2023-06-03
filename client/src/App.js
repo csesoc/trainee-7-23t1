@@ -1,9 +1,8 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LandingPage from "./components/LandingPage";
-import FarmPage from "./components/FarmPage";
-import GraveyardPage from "./components/GraveyardPage";
+import FarmPage from "./components/FarmPage/FarmPage";
+import GraveyardPage from "./components/GraveyardPage/GraveyardPage";
 import BuddydexPage from "./components/BuddydexPage";
 
 function App() {
