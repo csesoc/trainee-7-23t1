@@ -6,30 +6,12 @@ import { useState } from "react";
 
 function FarmPage({ pets, updateCollectedStatus, updateLimbStatus }) {
   const [petCount, setCount] = useState(1);
-
-  // const handleCollectClick = (petName) => {
-  //   // Find the index of the pet being clicked
-  //   const clickedPetIndex = pets.findIndex((pet) => pet.name === petName);
-
-  //   // Generate a random index excluding the clicked pet
-  //   const randomIndex = Math.floor(Math.random() * pets.length);
-  //   const randomPetIndex =
-  //     randomIndex === clickedPetIndex
-  //       ? (randomIndex + 1) % pets.length
-  //       : randomIndex;
-
-  //   // Get the name of the randomly selected pet
-  //   const randomPetName = pets[randomPetIndex].name;
-
-  //   // Call the updateCollectedStatus function to update the collected status of both pets
-  //   setCount(petCount + 1);
-  //   updateCollectedStatus(petName, true);
-  //   updateCollectedStatus(randomPetName, true);
-  // };
+  const [collectedPet, setCollectedPet] = useState(null);
 
   const handleCollectClick = (petName) => {
     // Filter the uncollected pets
     const uncollectedPets = pets.filter((pet) => !pet.collected);
+
   
     if (uncollectedPets.length === 0) {
       // Handle the case when all pets are already collected
@@ -41,10 +23,18 @@ function FarmPage({ pets, updateCollectedStatus, updateLimbStatus }) {
   
     // Get the name of the randomly selected pet
     const randomPetName = uncollectedPets[randomIndex].name;
+    // Render the collected pet overlay
+    setCollectedPet(uncollectedPets[randomIndex]);
   
     // Call the updateCollectedStatus function to update the collected status of both pets
     setCount(petCount + 1);
     updateCollectedStatus(randomPetName, true);
+
+
+    // Hide the overlay after 10 seconds
+    setTimeout(() => {
+      setCollectedPet(null);
+    }, 10000);
   };
   
   const collectedPets = pets.filter((pet) => pet.collected);
@@ -98,6 +88,7 @@ function FarmPage({ pets, updateCollectedStatus, updateLimbStatus }) {
               limbs={pet.limbs}
               birthday={pet.dataOfBirth}
               image={pet.images[5 - pet.limbs]}
+              collected={pet.collected}
             />
           </div>
         ))}
@@ -116,6 +107,16 @@ function FarmPage({ pets, updateCollectedStatus, updateLimbStatus }) {
           }}
         >Night mode
         </button>
+
+        
+        {collectedPet && (
+          <div className="collected-overlay">
+            <img width="200px" src={collectedPet.images[5 - collectedPet.limbs]} alt="there is meant to be a pet here"></img>
+            <div className="collected-text">
+              {collectedPet.name} collected
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
