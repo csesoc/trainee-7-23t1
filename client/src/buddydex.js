@@ -22,7 +22,6 @@ function createPetElement(imageSrc, name, type, description) {
     return petDiv;
   }
   
-  // Usage example:
   const petContainer1 = document.getElementById('pet1');
   const dogElement = createPetElement('dog/dog-0.png', 'Milo', 'Dog', 'Just a cute dog.');
   petContainer1.appendChild(dogElement);
