@@ -1,10 +1,19 @@
 
-.farm-container {
-  background-image: url(grass.png);
+body {
+  background-image: url(grass.jpg);
   background-size: 100%;
   width: 100%;
   height: 100%;
 }
+
+body:before{
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0,0,0,0.10);
 
 .info-box {
   position: fixed;
@@ -49,7 +58,8 @@
   width: 200px; /* Adjust the width as needed */
   padding: 10px;
   background-color: #f0f0f0;
-  border: 10px ridge #004C99;
+
+  border: 10px ridge #4C9900;
 
 }
 
@@ -91,15 +101,13 @@
   right: 10px;
   display: flex;
   align-items: center;
-  color: #ffffff;
   font-family: Arial, sans-serif;
   font-size: 16px;
-  background-color: rgba(255, 255, 255, 0.219);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  color: black;
+  background-color: #f0f0f0;
+  border: 5px ridge #0066CC;  
+  text-align: center;   
+  position: absolute;
   text-align: center;
   padding: 20px;
 }
@@ -110,4 +118,30 @@
 
 .pet-count {
   margin-top: 50px;
+}
+
+.graveyard {
+  font-size: 20px;
+  color: black;
+  background-color: #f0f0f0;
+  border: 5px ridge #0066CC;  
+  text-align: center;   
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height:70px;
+  width:70px;
+}
+
+.petcollection {
+  font-size: 20px;
+  color: black;
+  background-color: #f0f0f0;
+  border: 5px ridge #0066CC;  
+  text-align: center;   
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  height:70px;
+  width:70px;
 }
