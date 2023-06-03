@@ -18,26 +18,12 @@ a {
 
 .buddy_cont{
     align-items: center;
-
-
     background-attachment: fixed;
     display: flex;
-  
     width: 100%;
     height: 100%;
     justify-content: center;
 }
-
-.buddy_cont:before{
-    content: "";
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    background-color: rgba(0,0,0,0.25);
-}
-
 
 .buddy_wrapper {
     position: absolute;
@@ -100,10 +86,8 @@ a {
     position: absolute;
     height: 200px;
     width: 200px;
-    position: relative;
     font-size: 16px;
-    font-weight: bold;
-    padding: 20px;
+    padding: 10px;
 
 }
 
