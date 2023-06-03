@@ -28,30 +28,32 @@ function FarmPage({ pets, updateCollectedStatus }){
   
   return (
     <div className="farm-container">
-        <div className="Farm">
-        <button class="graveyard">
+      <div className="Farm">
+        <button className="graveyard">
           <a href="graveyard">
             <b>☗</b>
           </a>
         </button>
-        <button class="petcollection">
+        
+        <button className="petcollection">
           <a href="buddydex">
             <b>☰</b>
           </a>
         </button>
 
-      <h1>very doomed farm page</h1>
-      <p>too doomed</p>
-      <Clock />
-      {collectedPets.map((pet, index) => (
-        <div key={index}>
-          <Pet tag="running" name={pet.name} limbs={pet.limbs} birthday={pet.dataOfBirth} image={pet.images[5-pet.limbs]}/>
-        </div>
-      ))}
-      <button onClick={() => handleCollectClick(pets.name)}>
-            Summon Pet
-      </button>
-      <button>Night mode</button>
+        <h1>very doomed farm page</h1>
+        <p>too doomed</p>
+        <Clock />
+        {collectedPets.map((pet, index) => (
+          <div key={index}>
+            <Pet tag="running" name={pet.name} limbs={pet.limbs} birthday={pet.dataOfBirth} image={pet.images[5-pet.limbs]}/>
+          </div>
+        ))}
+        <button onClick={() => handleCollectClick(pets.name)}>
+          Summon Pet
+        </button>
+        <button>Night mode</button>
+      </div>
     </div>
   );
 };

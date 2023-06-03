@@ -22,7 +22,7 @@ function Pet(props) {
   useEffect(() => {
     if (isRunning) {
       const interval = setInterval(() => {
-        const top = Math.random() * window.innerHeight/3;
+        const top = Math.random() * window.innerHeight;
         const left = Math.random() * window.innerWidth;
         setPosition({ top, left });
       }, 30000); 
