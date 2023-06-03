@@ -14,7 +14,7 @@ function Grave(props) {
 
   return (
     <div
-      className="grave"
+      className="grave-container"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >

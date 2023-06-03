@@ -22,7 +22,7 @@ function Pet(props) {
   useEffect(() => {
     if (isRunning) {
       const interval = setInterval(() => {
-        const top = Math.random() * window.innerHeight;
+        const top = Math.random() * window.innerHeight/3;
         const left = Math.random() * window.innerWidth;
         setPosition({ top, left });
       }, 30000); 
@@ -40,8 +40,8 @@ function Pet(props) {
       onMouseLeave={handleMouseLeave}
       style={{ top: position.top, left: position.left }}
     >
-        <img id="pet" src="https://media.discordapp.net/attachments/1082563227851956234/1100655896239018064/salina.png?width=850&height=1134" 
-        width = "200px" alt = "current pet"></img>
+        <img id="pet" src={props.image} 
+        width = "200px" alt = {props.name}></img>
         {isHovered && (
             <div className="details-popup">
                 <p>Name: {props.name}</p>
