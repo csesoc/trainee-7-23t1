@@ -6,6 +6,9 @@ import miloImage from './dog-0.png';
 import mittensImage from './cat-0.png';
 import twitterImage from './bird-0.png';
 import salinaImage from './salina.png';
+import carrotsImage from './rabbit-0.png';
+import henryImage from './henry.png';
+import christImage from './chrico.png';
 
 const BuddydexPage = () => {
   return (
@@ -57,6 +60,31 @@ const BuddydexPage = () => {
                     collected={false}
                     imageSrc={salinaImage}
                   />
+                  <div class="pet-box">
+                    <PetElement
+                      name='Carrots'
+                      type='Rabbit'
+                      description='Just a cute rabbit.'
+                      collected={true}
+                      imageSrc={carrotsImage}
+                    />
+                  </div>
+                  <div class="pet-box">
+                    <PetElement
+                      name='Henry'
+                      type='Human'
+                      description='Training lead.'
+                      collected={true}
+                      imageSrc={henryImage}
+                    />
+                   <div class="pet-box">
+                    <PetElement
+                      name='Christ'
+                      type='Human'
+                      description='See you there!'
+                      collected={true}
+                      imageSrc={christImage}
+                    />
                 </div>
               </div>
 
