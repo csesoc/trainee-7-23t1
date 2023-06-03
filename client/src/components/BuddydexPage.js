@@ -1,6 +1,7 @@
-import "../buddydex.css";
-import "../buddydex.js";
+import React from 'react';
 
+import PetElement from '../PetElement.js';
+import '../buddydex.css';
 
 const BuddydexPage = () => {
   return (
@@ -18,31 +19,42 @@ const BuddydexPage = () => {
             <div id="pet" class="pet">
               <div class="row">
                 <div class="pet-container">
-                    <div id="pet1" class="pet">
-                        
-                    </div>
+                  <PetElement 
+                    name='Milo' 
+                    type='dog' 
+                    description='Just a cute dog.'
+                    collected={true} 
+                  />
                 </div>
                 <div class="pet-container">
-                    <div id="pet2" class="pet">
-                        
-                    </div>
+                  <PetElement 
+                    name='Milo' 
+                    type='dog' 
+                    description='Just a cute dog.'
+                    collected={true} 
+                  />
                 </div>
                 <div class="pet-container">
-                    <div id="pet3" class="pet">
-                        
-                    </div>
+                  <PetElement 
+                    name='Milo' 
+                    type='dog' 
+                    description='Just a cute dog.'
+                    collected={true} 
+                  /> 
                 </div>
                 <div class="pet-container">
-                    <div id="pet4" class="pet">
-                        
-                    </div>
+                  <PetElement 
+                    name='Milo' 
+                    type='dog' 
+                    description='Just a cute dog.'
+                    collected={false} 
+                  />
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <script src="buddydex.js"></script>
     </div>
   );
 };
