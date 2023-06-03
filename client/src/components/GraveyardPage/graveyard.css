@@ -1,0 +1,48 @@
+
+body {
+  background-image: url(grass.png);
+  background-size: 70%;
+}
+.grave {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.grave-info {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 200px;
+  height: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  display: none;
+}
+
+.grave:hover .grave-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.pet-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.pet-name {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.death-date {
+  margin-top: 5px;
+}
+
+.fun-fact {
+  margin-top: 5px;
+}

@@ -1,5 +1,5 @@
-import Grave from './Grave'
-
+import Grave from './Grave';
+import "./graveyard.css";
 const GraveyardPage = () => {
   return( 
     <div id="Graveyard">Welcome to the graveyard page!

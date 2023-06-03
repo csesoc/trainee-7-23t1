@@ -1,6 +1,7 @@
 import React from 'react';
 import Pet from './Pet';
 import Clock from './Clock';
+import "./farm.css";
 
 
 function FarmPage(props){
