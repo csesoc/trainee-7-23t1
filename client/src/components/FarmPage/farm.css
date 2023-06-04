@@ -153,20 +153,6 @@ body {
   width:70px;
 }
 
-.collected-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: red;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-}
-
 @keyframes overlay {
   0% {
     opacity: 0;
@@ -198,6 +184,20 @@ body {
   animation: overlay 10s ease-out;
 }
 
+.collected-overlay2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9998;
+  animation: overlay 10s ease-out;
+}
+
 .collected-text {
   position: relative;
   top: 70%;
@@ -205,6 +205,17 @@ body {
   font-size: 24px;
   font-weight: bold;
 }
+
+.collected-text2 {
+  z-index: 9999;
+  position: relative;
+  top: 70%;
+  left: 50%;
+  font-size: 24px;
+  color: black;
+  font-weight: bold;
+}
+
 
 
 

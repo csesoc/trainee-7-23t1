@@ -7,7 +7,7 @@ import { useState } from "react";
 function FarmPage({ pets, updateCollectedStatus, updateLimbStatus }) {
   const [petCount, setCount] = useState(1);
   const [collectedPet, setCollectedPet] = useState(null);
-  // const [eliminatedPet, eliminatePet] = useState(null);
+  const [eliminatedPet, eliminatePet] = useState(null);
   
 
   const handleCollectClick = (petName) => {
@@ -55,18 +55,18 @@ function FarmPage({ pets, updateCollectedStatus, updateLimbStatus }) {
     
     const randomPetName = collectedPets[randomIndex].name;
     const randomPetLimbs = collectedPets[randomIndex].limbs - 1; 
-    // eliminatePet(collectedPets[randomIndex]);
-
+    
     if(randomPetLimbs === 0) {
       updateLimbStatus(randomPetName, 4);
       updateCollectedStatus(randomPetName, false);
       return;
     }
     updateLimbStatus(randomPetName, randomPetLimbs);
-
-    // setTimeout(() => {
-    //   eliminatePet(null);
-    // }, 10000);
+    eliminatePet(collectedPets[randomIndex]);
+    
+    setTimeout(() => {
+      eliminatePet(null);
+    }, 10000);
 
   }
   
@@ -122,6 +122,15 @@ function FarmPage({ pets, updateCollectedStatus, updateLimbStatus }) {
             <img width="200px" src={collectedPet.images[5 - collectedPet.limbs]} alt="there is meant to be a pet here"></img>
             <div className="collected-text">
               {collectedPet.name} collected
+            </div>
+          </div>
+        )}
+
+        {eliminatedPet && (
+          <div className="collected-overlay2">
+            <img width="200px" src={eliminatedPet.images[5 - eliminatedPet.limbs + 1]} alt="there is meant to be a pet here"></img>
+            <div className="collected-text2">
+              {eliminatedPet.name} begs you to sleep (please)
             </div>
           </div>
         )}
