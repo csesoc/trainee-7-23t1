@@ -15,11 +15,11 @@ function App() {
       collected: true,
       images: [
         "https://media.discordapp.net/attachments/1082563227851956234/1100655896239018064/salina.png?width=850&height=1134",
-        "https://media.discordapp.net/attachments/1082563227851956234/1100655896239018064/salina.png?width=850&height=1134",
-        "https://media.discordapp.net/attachments/1082563227851956234/1100655896239018064/salina.png?width=850&height=1134",
-        "https://media.discordapp.net/attachments/1082563227851956234/1100655896239018064/salina.png?width=850&height=1134",
-        "https://media.discordapp.net/attachments/1082563227851956234/1100655896239018064/salina.png?width=850&height=1134",
-        "https://media.discordapp.net/attachments/1082563227851956234/1100655896239018064/salina.png?width=850&height=1134",
+        "https://media.discordapp.net/attachments/910124339242893332/1114769415083405342/salina.png?width=850&height=1134",
+        "https://media.discordapp.net/attachments/910124339242893332/1114769514450653214/salina.png?width=850&height=1134",
+        "https://media.discordapp.net/attachments/910124339242893332/1114769650056699934/salina.png?width=850&height=1134",
+        "https://media.discordapp.net/attachments/910124339242893332/1114769746395672676/salina.png?width=850&height=1134",
+        "https://media.discordapp.net/attachments/910124339242893332/1114769823340167168/salina.png?width=850&height=1134",
       ],
       limbs: 5,
     },
@@ -29,11 +29,11 @@ function App() {
       collected: false,
       images: [
         "https://media.discordapp.net/attachments/1082563227851956234/1100655894049603614/henry.png?width=850&height=1134",
-        "https://media.discordapp.net/attachments/1082563227851956234/1100655894049603614/henry.png?width=850&height=1134",
-        "https://media.discordapp.net/attachments/1082563227851956234/1100655894049603614/henry.png?width=850&height=1134",
-        "https://media.discordapp.net/attachments/1082563227851956234/1100655894049603614/henry.png?width=850&height=1134",
-        "https://media.discordapp.net/attachments/1082563227851956234/1100655894049603614/henry.png?width=850&height=1134",
-        "https://media.discordapp.net/attachments/1082563227851956234/1100655894049603614/henry.png?width=850&height=1134",
+        "https://media.discordapp.net/attachments/910124339242893332/1114768526947930153/henry.png?width=850&height=1134",
+        "https://media.discordapp.net/attachments/910124339242893332/1114768788756377600/henry.png?width=850&height=1134",
+        "https://media.discordapp.net/attachments/910124339242893332/1114768914161864724/henry.png?width=850&height=1134",
+        "https://media.discordapp.net/attachments/910124339242893332/1114769016431583296/henry.png?width=850&height=1134",
+        "https://media.discordapp.net/attachments/910124339242893332/1114769103182385243/henry.png?width=850&height=1134",
       ],
       limbs: 5,
     },
@@ -57,11 +57,11 @@ function App() {
       collected: false,
       images: [
         "https://media.discordapp.net/attachments/1082563227851956234/1100655396558999592/chrico.png?width=850&height=1134",
-        "https://media.discordapp.net/attachments/1082563227851956234/1100655396558999592/chrico.png?width=850&height=1134",
-        "https://media.discordapp.net/attachments/1082563227851956234/1100655396558999592/chrico.png?width=850&height=1134",
-        "https://media.discordapp.net/attachments/1082563227851956234/1100655396558999592/chrico.png?width=850&height=1134",
-        "https://media.discordapp.net/attachments/1082563227851956234/1100655396558999592/chrico.png?width=850&height=1134",
-        "https://media.discordapp.net/attachments/1082563227851956234/1100655396558999592/chrico.png?width=850&height=1134",
+        "https://media.discordapp.net/attachments/910124339242893332/1114767359937368234/chrico.png?width=850&height=1134",
+        "https://media.discordapp.net/attachments/910124339242893332/1114767557400993832/chrico.png?width=850&height=1134",
+        "https://media.discordapp.net/attachments/910124339242893332/1114767688670126130/chrico.png?width=850&height=1134",
+        "https://media.discordapp.net/attachments/910124339242893332/1114767801446563871/chrico.png?width=850&height=1134",
+        "https://media.discordapp.net/attachments/910124339242893332/1114767949492912208/chrico.png?width=850&height=1134",
       ],
       limbs: 5,
     },
@@ -71,11 +71,11 @@ function App() {
       collected: false,
       images: [
         "https://media.discordapp.net/attachments/1082563227851956234/1100655396558999592/chrico.png?width=850&height=1134",
-        "https://media.discordapp.net/attachments/1082563227851956234/1100655396558999592/chrico.png?width=850&height=1134",
-        "https://media.discordapp.net/attachments/1082563227851956234/1100655396558999592/chrico.png?width=850&height=1134",
-        "https://media.discordapp.net/attachments/1082563227851956234/1100655396558999592/chrico.png?width=850&height=1134",
-        "https://media.discordapp.net/attachments/1082563227851956234/1100655396558999592/chrico.png?width=850&height=1134",
-        "https://media.discordapp.net/attachments/1082563227851956234/1100655396558999592/chrico.png?width=850&height=1134",
+        "https://media.discordapp.net/attachments/910124339242893332/1114767359937368234/chrico.png?width=850&height=1134",
+        "https://media.discordapp.net/attachments/910124339242893332/1114767557400993832/chrico.png?width=850&height=1134",
+        "https://media.discordapp.net/attachments/910124339242893332/1114767688670126130/chrico.png?width=850&height=1134",
+        "https://media.discordapp.net/attachments/910124339242893332/1114767801446563871/chrico.png?width=850&height=1134",
+        "https://media.discordapp.net/attachments/910124339242893332/1114767949492912208/chrico.png?width=850&height=1134",
       ],
       limbs: 5,
     },
@@ -140,12 +140,26 @@ function App() {
     setPets(updatedPets);
   };
 
+  const updateLimbStatus = (petName, newStatus) => {
+    const updatedPets = pets.map((pet) => {
+      if (pet.name === petName) {
+        return {
+          ...pet,
+          limbs: newStatus,
+        };
+      }
+      return pet;
+    });
+
+    setPets(updatedPets);
+  };
+
   return (
     <Router>
       <Routes>
         <Route path="/" element={<LandingPage />}></Route>
         <Route path="/farm" 
-           element={<FarmPage pets={pets} updateCollectedStatus={updateCollectedStatus} />}></Route>
+           element={<FarmPage pets={pets} updateCollectedStatus={updateCollectedStatus} updateLimbStatus={updateLimbStatus}/>}></Route>
         <Route path="/graveyard" element={<GraveyardPage />}></Route>
         <Route path="/buddydex" element={<BuddydexPage />}></Route>
       </Routes>

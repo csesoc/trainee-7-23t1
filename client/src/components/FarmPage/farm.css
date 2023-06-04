@@ -71,7 +71,6 @@ body {
 
 .pet-container {
   position: relative;
-  display: inline-block;
   transition: top 100s, left 100s; /* Transition effect for smooth movement */
 }
 
@@ -101,22 +100,6 @@ body {
 
 #pet {
   animation: petAnimation 2s linear infinite;
-}
-
-.pet-container.running {
-  animation: petMove 100s linear infinite;
-}
-
-@keyframes petMove {
-  0% {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: translate(50px, 50px);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
 }
 
 .clock {
@@ -169,3 +152,61 @@ body {
   height:70px;
   width:70px;
 }
+
+.collected-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+@keyframes overlay {
+  0% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+.collected-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9998;
+  animation: overlay 10s ease-out;
+}
+
+.collected-text {
+  position: relative;
+  top: 70%;
+  left: 50%;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+
+
+
