@@ -22,8 +22,8 @@ function Pet(props) {
   useEffect(() => {
     if (isRunning) {
       const interval = setInterval(() => {
-        const top = Math.random() * window.innerHeight;
-        const left = Math.random() * window.innerWidth;
+        const top = Math.random() * (window.innerHeight-100)/2;
+        const left = Math.random() * (window.innerWidth-100)/2;
         setPosition({ top, left });
       }, 30000); 
 

@@ -7,6 +7,8 @@ import { useState } from "react";
 function FarmPage({ pets, updateCollectedStatus, updateLimbStatus }) {
   const [petCount, setCount] = useState(1);
   const [collectedPet, setCollectedPet] = useState(null);
+  // const [eliminatedPet, eliminatePet] = useState(null);
+  
 
   const handleCollectClick = (petName) => {
     // Filter the uncollected pets
@@ -53,13 +55,19 @@ function FarmPage({ pets, updateCollectedStatus, updateLimbStatus }) {
     
     const randomPetName = collectedPets[randomIndex].name;
     const randomPetLimbs = collectedPets[randomIndex].limbs - 1; 
-    
+    // eliminatePet(collectedPets[randomIndex]);
+
     if(randomPetLimbs === 0) {
       updateLimbStatus(randomPetName, 4);
       updateCollectedStatus(randomPetName, false);
       return;
     }
     updateLimbStatus(randomPetName, randomPetLimbs);
+
+    // setTimeout(() => {
+    //   eliminatePet(null);
+    // }, 10000);
+
   }
   
   return (
@@ -117,9 +125,23 @@ function FarmPage({ pets, updateCollectedStatus, updateLimbStatus }) {
             </div>
           </div>
         )}
+
       </div>
     </div>
   );
 }
 
 export default FarmPage;
+
+
+// {eliminatedPet && (
+//   <div className="deadly-overlay">
+//     <div className="crash-container">
+//       <img width="200px" src={eliminatedPet.images[5 - eliminatedPet.limbs]} alt="there is meant to be a pet here" className="catapulted"></img>
+//       <img width="400px" src="https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/a53e4fb5a4d1b96.png" alt="bus" className="bus"></img>
+//     </div>
+//     <div className="collected-text">
+//       {eliminatedPet.name} begs you to sleep
+//     </div>
+//   </div>
+// )}
